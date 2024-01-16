@@ -14,13 +14,15 @@
     justify-content: space-between;
     position: relative;
 }
+.header-logo{
+    margin-left: 30px;
+}
 .logo-bakery{
     font-family: var(--title-font);
     font-size: var(--medium-size);
     color: var(--title-color);
     cursor: pointer;
     transition: color .4s;
-    margin-left: 10px;
 }
 .logo-bakery:hover{
     color: var(--hover-title);
@@ -96,4 +98,23 @@
     top: 0;
     left: 0;
     z-index: -1;
+}
+
+
+/* Responsive */
+@media (min-width: 502px) {
+    .logo-bakery{
+        font-size: 18px;
+    }
+    .header-logo{
+        margin-left: 50px;
+    }
+}
+@media (min-width: 605px) {
+    .logo-bakery{
+        font-size: 18px;
+    }
+    .header-logo{
+        margin-left: 50px;
+    }
 }

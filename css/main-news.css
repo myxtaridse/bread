@@ -2,12 +2,6 @@
 .news-container{
     margin: 70px 20px;
 }
-.news-title{
-    font-family: var(--title-font);
-    font-size: var(--title-size);
-    margin-bottom: 30px;
-    text-align: center;
-}
 .news-sections{
     margin-bottom: 30px;
 }
@@ -17,7 +11,6 @@
 .news-section{
     display: flex;
     align-items: center;
-    column-gap: 10px;
     margin-bottom: 20px;
 }
 .news-text{
@@ -54,4 +47,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* Responsive */
+@media (min-width: 502px) {
+    
+    .all-title{
+        font-family: var(--title-font);
+        font-size: 50px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .title-section{
+        font-size: 30px;
+    }
+    .text-section{
+        font-size: 15px;
+    }
 }
