@@ -1,0 +1,30 @@
+
+.location-container{
+    position: relative;
+}
+.location-bg{
+    width: 100%;
+}
+.container-visit{
+    position: absolute;
+    top: 20%;
+    left: 37%;
+}
+.location-title{
+    font-family: var(--title-font);
+    font-size: var(--title-size);
+    text-align: center;
+}
+.location-text{
+    text-align: center;
+    font-size: var(--medium-size);
+    margin-top: 30px;
+}
+.button-container-location{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.location-button{
+    margin-top: 40px;
+}

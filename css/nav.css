@@ -1,0 +1,99 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 10;
+}
+.navbar-container{
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.logo-bakery{
+    font-family: var(--title-font);
+    font-size: var(--medium-size);
+    color: var(--title-color);
+    cursor: pointer;
+    transition: color .4s;
+    margin-left: 10px;
+}
+.logo-bakery:hover{
+    color: var(--hover-title);
+}
+.nav-toggle-menu,
+.nav-close-menu{
+    cursor: pointer;
+    color: var(--color-text);
+    font-size: 20px;
+}
+.nav-toggle-menu{
+    margin-right: 10px;
+}
+
+@media (max-width: 1150px) {
+    .nav-container-show{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background: transparent;
+        backdrop-filter: blur(30px);
+        --webkit-backdrop-filter: blur(30px);
+        width: 70%;
+        height: 100%;
+        padding: 96px 48px 0;
+        transition: right .4s;
+    }
+}
+.nav-list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+.nav-link{
+    color: var(--color-text);
+    font-weight: 600;
+    transition: color .4s;
+}
+.nav-link:hover{
+    color: var(--title-color);
+}
+.nav-close-menu,
+.menu-bread-1,
+.menu-bread-2{
+    position: absolute;
+}
+.nav-close-menu{
+    top: 32px;
+    right: 16px;
+}
+.menu-bread-1{
+    width: 80px;
+    top: 176px;
+    right: 12px;
+}
+.menu-bread-2{
+    width: 60px;
+    top: 448px;
+    left: 96px;
+}
+
+.show-menu{
+    right: 0;
+}
+.blur-header::after{
+    content: '';
+    position: absolute;
+    width: 1000%;
+    height: 100%;
+    background-color: hsla(0, 0%, 6%, .2);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}

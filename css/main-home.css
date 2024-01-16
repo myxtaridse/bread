@@ -1,0 +1,132 @@
+
+.home{
+    position: relative;
+    padding-top: 104px;
+}
+.home-container{    
+    row-gap: 32px;
+}
+.home-background,
+.home-shadow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.home-background{
+    object-fit: cover;
+    object-position: center;
+}
+.home-shadow{
+    background: linear-gradient(180deg,
+                hsla(0, 0%, 0%, 0) 0%,   /*тень*/
+                hsl(0, 0%, 6%) 100%);
+}
+.home-container-title{
+    position: relative;
+    text-align: center;
+}
+.home-title{
+    font-size: var(--biggest-size);
+    font-family: var(--title-font);
+    margin-bottom: 24px;
+}
+.button-orange{
+    background-color: var(--title-color);
+    padding: 15px 18px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 500;
+    font-size: var(--small-size);
+    color: black;
+    cursor: pointer;
+    transition: background-color .4s;
+    font-size: 12px;
+}
+.button-orange:hover{
+    background-color: var(--hover-title);
+}
+.crendel-image{
+    width: 50px;
+    position: absolute;
+    top: 240px;
+    left: 20%;
+}
+.home-image{
+    max-width: 400px;
+    justify-items: center;
+    border-radius: 50px;
+}
+.home-bread-image{
+    rotate: 15deg;
+    width: 90%;
+    
+}
+
+.links-container{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 80px;
+}
+.left-links-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 7px;
+    font-size: 14px;
+}
+.right-links-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15px;
+}
+.social-link{
+    width: 24px;
+    height: 24px;
+    text-decoration: none;
+    display: block;
+}
+.facebook-link{
+    background: url(../img/logo/facebook-circle-line.png);
+}
+.facebook-link:hover{
+    background: url(../img/logo/facebook-circle-line\ \(1\).png);
+}
+.instagram-link{
+    background: url(../img/logo/instagram-line.png);
+}
+.instagram-link:hover{
+    background: url(../img/logo/instagram-line\ \(1\).png);
+}
+.youtube-link{
+    background: url(../img/logo/youtube-line.png);
+}
+.youtube-link:hover{
+    background: url(../img/logo/youtube-line\ \(1\).png);
+}
+
+/*
+.home-button{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.home-bread-image{
+    position: absolute;
+    top: 20px;
+    right: 120px;
+    height: 700px;
+    
+}
+
+
+.main{
+    background-color: var(--body-bg);
+    padding-bottom: 300px;
+}
+
+*/

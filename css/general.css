@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&family=Inter:wght@300;400;600&family=Lato:wght@400;700&family=Montserrat:wght@400;500;600;700&family=Poller+One&family=Poppins:wght@300;400;500;600;700&family=Red+Rose:wght@300;400;500;600;700&family=Roboto+Slab:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inria+Serif:wght@300;400;700&family=Inter:wght@300;400;600&family=Lato:wght@400;700&family=Montserrat:wght@400;500;600;700&family=Poller+One&family=Poppins:wght@300;400;500;600;700&family=Red+Rose:wght@300;400;500;600;700&family=Roboto+Slab:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500;700&display=swap');
+
+
+:root{
+    /*COLOR*/
+    --body-bg: black;
+    --color-text: white;
+    --second-color-text: rgb(182, 178, 178);
+    --title-color: rgb(243, 152, 73);
+    --hover-title: rgb(220, 114, 21);
+    --container-bg: rgba(32, 30, 30, 0.618);
+
+    /*FONT-SIZE*/
+    --biggest-size: 48px;
+    --title-size: 36px;
+    --medium-size: 22px;
+    --small-size: 18px;
+    --smallest-size: 14px;
+    --body-size: 16px;
+
+    /*FONT-FAMILY*/
+    --title-font: 'Dancing Script', cursive;
+    --body-font: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body,
+button{
+    font-family: var(--body-font);
+    font-size: var(--body-size);
+}
+body{
+    background-color: rgb(15, 15, 15);
+    color: var(--color-text);
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.container {
+    max-width: 1120px;
+    margin-inline: 1.5rem;
+  }
