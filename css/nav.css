@@ -5,7 +5,6 @@
     right: 0;
     width: 100%;
     background-color: transparent;
-    z-index: 10;
 }
 .navbar-container{
     height: 90px;
@@ -49,6 +48,7 @@
         height: 100%;
         padding: 96px 48px 0;
         transition: right .4s;
+        z-index: 10;
     }
 }
 .nav-list{
