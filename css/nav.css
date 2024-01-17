@@ -43,7 +43,7 @@
         top: 0;
         right: -100%;
         background: transparent;
-        backdrop-filter: blur(30px);
+        backdrop-filter: blur(30px) contrast(1px);
         --webkit-backdrop-filter: blur(30px);
         width: 70%;
         height: 100%;
