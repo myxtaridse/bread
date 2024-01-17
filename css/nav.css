@@ -42,7 +42,7 @@
         position: fixed;
         top: 0;
         right: -100%;
-        background: transparent;
+        background-color: #000;
         backdrop-filter: blur(30px) contrast(5%);
         --webkit-backdrop-filter: blur(30px) contrast(5%);
         width: 70%;
