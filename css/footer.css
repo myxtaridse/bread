@@ -3,8 +3,6 @@
 .footer-container{
     padding-block: 48px 32px;
     position: relative;
-    margin-left: 30px;
-    margin-right: 20px;
 }
 .left-footer{
     margin-bottom: 50px;
@@ -20,8 +18,12 @@
 }
 
 
+.container-right-footer{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
 .right-footer{
-    margin-left: 20px;
     display: grid;
     grid-template-columns: repeat(2, 140px);
     gap: 40px 30px;
@@ -38,10 +40,10 @@
     font-size: 12px;
     margin-bottom: 10px;
 }
-.social-link-section{
+.footer-social-links{
     display: flex;
     align-items: center;
-    column-gap: 10px;
+    column-gap: 2px;
 }
 .baton-footer{
     position: absolute;
@@ -65,23 +67,50 @@
 }
 
 /* Responsive */
-@media (min-width: 502px) {
+
+@media (min-width: 560px) {
+    .kolco-footer{
+        width: 70px;
+        top: 230px;
+        right: 12px;
+    }
+}
+
+@media (min-width: 471px) and (max-width: 559px) {
+    .kolco-footer{
+        top: 80px;
+        right: 120px;
+    }
+}
+
+@media (min-width: 503px) {
+    .container-right-footer{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
+@media (min-width: 470px) {
     
-    .footer-container{
-        margin-left: 50px;
-        margin-right: 50px;
+    
+    .text-bakery{
+        font-size: 12px;
     }
     .right-footer{
-        margin-left: -8px;
-        grid-template-columns: repeat(3, 140px);
+        grid-template-columns: repeat(3, 130px);
         gap: 20px;
     }
     .footer-title{
-        font-size: 18px;
+        font-size: 16px;
     }
     .footer-info,
     .contact{
-        font-size: 14px;
+        font-size: 12px;
+    }
+    .footer-social-links{
+        column-gap: 10px;
     }
     .baton-footer{
         top: 50px;
@@ -90,5 +119,86 @@
     .kolco-footer{
         top: 80px;
         right: 120px;
+    }
+}
+
+@media (min-width: 363px) and (max-width: 470px) {
+    
+    .footer-social-links{
+        column-gap: 6px;
+    }
+}
+
+@media (max-width: 363px){
+    
+    .right-footer{
+        display: grid;
+        grid-template-columns: repeat(2, 100px);
+        gap: 40px 30px;
+    }
+    .text-bakery{
+        margin-top: 6px;
+        font-size: 9px;
+    }
+    .right-footer{
+        gap: 20px 30px;
+    }
+    .footer-title{
+        font-size: 11px;
+        margin-bottom: 6px;
+    }
+    .footer-info,
+    .contact{
+        font-size: 7px;
+        margin-bottom: 7px;
+    }
+    .baton-footer{
+        width: 60px;
+        bottom: 30px;
+        left: 170px;
+    }
+    .kolco-footer{
+        width: 60px;
+        top: 80px;
+        right: 20px;
+    }
+    .contact-email{
+        display: block;
+    }
+}
+
+@media (max-width: 290px) {
+    .text-bakery{
+        margin-top: 3px;
+        font-size: 8px;
+    }
+    .logo-footer{
+        margin-bottom: 6px;
+    }
+    .right-footer{
+        grid-template-columns: repeat(2, 80px);
+        gap: 20px 20px;
+    }
+    .footer-title{
+        font-size: 10px;
+        margin-bottom: 6px;
+    }
+    .footer-info,
+    .contact{
+        font-size: 8px;
+        margin-bottom: 3px;
+    }
+    .footer-copy{
+        font-size: 8px;
+        margin-top: 10px;
+        margin-bottom: 7px;
+    }
+}
+
+@media (max-width: 270px) {
+    .baton-footer{
+        width: 50px;
+        bottom: 30px;
+        left: 140px;
     }
 }

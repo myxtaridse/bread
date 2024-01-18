@@ -1,7 +1,5 @@
 
-.news-container{
-    margin: 70px 20px;
-}
+
 .news-sections{
     margin-bottom: 30px;
 }
@@ -63,5 +61,25 @@
     }
     .text-section{
         font-size: 15px;
+    }
+}
+
+@media (max-width: 363px){
+    
+    .title-section{
+        font-size: 18px;
+    }
+    .text-section{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 290px) {
+    
+    .title-section{
+        font-size: 16px;
+    }
+    .text-section{
+        font-size: 8px;
     }
 }

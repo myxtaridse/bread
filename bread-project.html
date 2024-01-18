@@ -24,7 +24,7 @@
             <div class="nav-container-show" id="nav-menu">
                     <ul class="nav-list">
                         <li>
-                            <a class="nav-link home-link" href="#home">Home</a>
+                            <a class="nav-link home-link" href="#home active-link">Home</a>
                         </li>
                         <li>
                             <a class="nav-link news-link" href="#news">News</a>
@@ -62,9 +62,9 @@
                 <img src="img/home-bg.jpg" alt="" class="home-background">
                 <div class="home-shadow"></div>
                 <div class="home-container-title">
-                    <div class="home-title">Select The Best Quality Breads</div>
+                    <h1 class="home-title">Select The Best Quality Breads</h1>
                     <button class="home-button button-orange">Select Breads</button>
-                <img src="img/bread-1.png" alt="" class="crendel-image">
+                <!--<img src="img/bread-1.png" alt="" class="crendel-image">-->
                 </div>
                 <div class="home-image">
                     <img src="img/home-bread.png" alt="" class="home-bread-image">
@@ -78,10 +78,16 @@
                                 Lima Peru</div>
                         </div>
                     </div>
-                    <div class="right-links-container">
-                        <a href="https://www.facebook.com/" class="social-link facebook-link" target="_blank"></a>
-                        <a href="https://www.instagram.com/" class="social-link instagram-link" target="_blank"></a>
-                        <a href="https://www.youtube.com/" class="social-link youtube-link" target="_blank"></a>
+                    <div class="social-links-container">
+                        <a href="https://www.facebook.com/" class="social-link facebook-link" target="_blank">
+                            <i class="ri-facebook-circle-line"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" class="social-link instagram-link" target="_blank">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="https://www.youtube.com/" class="social-link youtube-link" target="_blank">
+                            <i class="ri-youtube-line"></i>
+                        </a>
                     </div>
                 </div>
             
@@ -89,7 +95,7 @@
         </section>
     
 
-        <div class="news-container container" id="news">
+        <section class="news-container container" id="news">
             <div class="news-title all-title">New Breads</div>
             <div class="news-sections">
                 <div class="left-section-news news-section">
@@ -144,9 +150,9 @@
                 See More Breads
             </button>
             </div>
-        </div>
+        </section>
 
-        <div class="about-container container" id="about">
+        <section class="about-container container" id="about">
             <div class="about-section">
                 <div class="about-title all-title">About Us</div>
                 <div class="about-text">
@@ -159,15 +165,15 @@
                 <div class="button-footer">
                     <button class="about-button button-orange">Know More</button>
                 </div>
-                <img src="img/bread-2.png" alt="" class="chebyrek-image">
+                <!--<img src="img/bread-2.png" alt="" class="chebyrek-image">-->
             </div>
             <div class="about-image-container">
                 <img src="img/about-bread.png" alt="" class="about-image">
             </div>
             
-        </div>
+        </section>
 
-        <div class="favorites-container container" id="favorite">
+        <section class="favorites-container container" id="favorite">
             <div class="favorites-title all-title">Customer Favorites</div>
             <div class="center-grid">
 
@@ -267,9 +273,9 @@
 
             </div>
             
-        </div>
+        </section>
 
-        <div class="location-container" id="location">
+        <section class="location-container container" id="location">
             <img src="img/visit-bg.jpg" alt="" class="location-bg">
             <div class="shadow-bg"></div>
             <div class="container-visit container">
@@ -282,9 +288,9 @@
                     <button class="location-button button-orange">See Location</button>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <footer class="footer-container">
+        <footer class="footer-container container">
             <div class="left-footer">
                 <a href="bread-project.html" class="logo-bakery logo-footer">Bakery</a>
                 <span class="text-bakery">
@@ -293,7 +299,8 @@
                 </span>
             </div>
 
-            <div class="right-footer">
+            <div class="container-right-footer">
+                <div class="right-footer">
                 <div class="address-footer section-footer">
                     <div class="address-title footer-title">Address</div>
                     <div class="footer-info">AV.The Sun #321<br>
@@ -311,22 +318,34 @@
 
                 <div class="social-link-footer section-footer">
                     <div class="social-footer-title footer-title">Follow Us</div>
-                    <div class="social-link-section">
-                        <a href="https://www.facebook.com/" class="social-link facebook-link" target="_blank"></a>
-                        <a href="https://www.instagram.com/" class="social-link instagram-link" target="_blank"></a>
-                        <a href="https://www.youtube.com/" class="social-link youtube-link" target="_blank"></a>
+                    <div class="footer-social-links">
+                        <a href="https://www.facebook.com/" class="social-link facebook-link" target="_blank">
+                            <i class="ri-facebook-circle-line footer-link"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" class="social-link instagram-link" target="_blank">
+                            <i class="ri-instagram-line footer-link"></i>
+                        </a>
+                        <a href="https://www.youtube.com/" class="social-link youtube-link" target="_blank">
+                            <i class="ri-youtube-line footer-link"></i>
+                        </a>
                     </div>
                     
                 </div>
             
             </div>
-            <img src="img/bread-4.png" alt="" class="kolco-footer">
-            <img src="img/bread-3.png" alt="" class="baton-footer">
+            </div>
+            
+            <!--<img src="img/bread-4.png" alt="" class="kolco-footer">
+            <img src="img/bread-3.png" alt="" class="baton-footer">-->
         </footer>
         <div class="footer-copy">&#169; All Rights Reserved By</div>
     
     
     <!---->
+    <a href="#home" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
     <script src="js/main.js"></script>
 </body>
 </html>

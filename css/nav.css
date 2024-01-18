@@ -2,7 +2,6 @@
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
     width: 100%;
     background-color: transparent;
     z-index: 10;
@@ -34,7 +33,7 @@
     font-size: 20px;
 }
 .nav-toggle-menu{
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 @media (max-width: 1150px) {
@@ -43,8 +42,8 @@
         top: 0;
         right: -100%;
         background: transparent;
-        backdrop-filter: blur(30px);
-        --webkit-backdrop-filter: blur(30px);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(30px);
         width: 70%;
         height: 100%;
         padding: 96px 48px 0;
@@ -71,7 +70,7 @@
 }
 .nav-close-menu{
     top: 32px;
-    right: 16px;
+    right: 20px;
 }
 .menu-bread-1{
     width: 80px;
@@ -110,11 +109,42 @@
         margin-left: 50px;
     }
 }
-@media (min-width: 605px) {
-    .logo-bakery{
-        font-size: 18px;
+@media (max-width: 363px){
+    
+    .navbar-container{
+        height: 70px;
     }
-    .header-logo{
-        margin-left: 50px;
+    .nav-close-menu{
+        top: 23px;
+        right: 20px;
+    }
+    .nav-link{
+        font-size: 13px;
+    }
+    .menu-bread-1{
+        width: 50px;
+        top: 176px;
+        right: 12px;
+    }
+    .menu-bread-2{
+        width: 60px;
+        top: 448px;
+        left: 96px;
     }
 }
+
+@media (max-width: 290px) {
+    
+    .logo-bakery{
+        font-size: 14px;
+    }
+    .nav-toggle-menu,
+    .nav-close-menu{
+        font-size: 16px;
+    }
+    .nav-link{
+        font-size: 12px;
+    }
+}
+
+

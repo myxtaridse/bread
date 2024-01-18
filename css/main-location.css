@@ -38,3 +38,20 @@
         font-size: 20px;
     }
 }
+@media (max-width: 363px){
+    
+    .location-text{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 290px) {
+    .location-container{
+        padding-block: 20px;
+    }
+    .location-text{
+        font-size: 10px;
+        margin-top: 14px;
+        margin-bottom: 20px;
+    }
+}

@@ -12,6 +12,8 @@
     --container-bg: rgba(32, 30, 30, 0.618);
 
     /*FONT-SIZE*/
+    /*--title-home: 46px;*/
+    --logo-size: 20px;
     --biggest-size: 48px;
     --title-size: 36px;
     --medium-size: 18px;
@@ -28,6 +30,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /*border: 1px solid red;*/
 }
 html{
     scroll-behavior: smooth;
@@ -40,6 +43,7 @@ button{
 body{
     background-color: rgb(15, 15, 15);
     color: var(--color-text);
+    
 }
 ul{
     list-style: none;
@@ -54,11 +58,85 @@ img {
 }
 .container {
     max-width: 1120px;
-    margin-inline: 1.5rem;
+    padding: 0 16px;
 }
 .all-title{
     font-family: var(--title-font);
     font-size: var(--title-size);
-    margin-bottom: 25px;
+    margin: 25px 0;
     text-align: center;
 }
+
+::-webkit-scrollbar{
+    width: .9rem;
+    background-color: rgb(43, 38, 34);
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(71, 63, 56);
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: hsl(29, 54%, 29%);
+}
+
+.scrollup{
+    position: fixed;
+    bottom: 4%;
+    right: -5%;
+    background-color: rgb(53, 53, 53);
+    padding: 3px 4px;
+    border-radius: 5px;
+    box-shadow: 0 12px 24px hsla(0, 0%, 0%, .3);
+    z-index: 10;
+    transition: background-color .4s, transform .4s;
+}
+.scrollup:hover{
+    background-color: hsl(29, 59%, 25%);
+    transform: translateY(-.5rem);
+}
+.ri-arrow-up-line{
+    color: white;
+}
+.show-scroll{
+    right: 5%;
+}
+
+.active-link{
+    color: hsl(28, 88%, 62%);
+}
+
+/*@media (min-width: 806px) and (max-width: 805px){
+    :root{
+        --title-home: 4.5em;
+    }
+}
+
+@media (min-width: 717px){
+    :root{
+        --title-home: 4em;
+    }
+}
+
+@media (min-width: 628px) and (max-width: 716px){
+    :root{
+        --title-home: 3.5em;
+    }
+}
+
+@media (min-width: 449px){
+    :root{
+        --title-home: 3em;
+    }
+    
+}
+
+@media (min-width: 301px) and (max-width: 448px){
+    :root{
+        --title-home: 2em;
+    }
+}
+
+@media (width <= 300px) {
+    :root{
+        --title-home: 1.5em;
+    }
+}*/

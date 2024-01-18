@@ -3,9 +3,6 @@
     position: relative;
     padding-top: 104px;
 }
-.home-container{    
-    row-gap: 32px;
-}
 .home-background,
 .home-shadow{
     position: absolute;
@@ -27,11 +24,13 @@
 .home-container-title{
     position: relative;
     text-align: center;
+    padding: 0 20%;
+    
 }
 .home-title{
-    font-size: var(--biggest-size);
+    font-size: var(--title-home);
     font-family: var(--title-font);
-    margin-bottom: 24px;
+    margin-bottom: 10%;
 }
 .button-orange{
     background-color: var(--title-color);
@@ -54,22 +53,23 @@
     left: 20%;
 }
 .home-image{
-    max-width: 400px;
-    justify-items: center;
-    border-radius: 50px;
+    /*max-width: 400px;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .home-bread-image{
     rotate: 15deg;
-    width: 90%;
-    
+    width: 80%;
+    border-radius: 50px;
 }
 
 .links-container{
     margin-top: 40px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    column-gap: 80px;
+    justify-content: space-between;
+    padding: 0 12px;
 }
 .left-links-container{
     display: flex;
@@ -78,59 +78,115 @@
     column-gap: 7px;
     font-size: 14px;
 }
-.right-links-container{
+.social-links-container{
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 15px;
+    column-gap: 10px;
 }
 .social-link{
-    width: 24px;
-    height: 24px;
     text-decoration: none;
-    display: block;
 }
-.facebook-link{
-    background: url(../img/logo/facebook-circle-line.png);
+.ri-facebook-circle-line{
+    font-size: 20px;
+    color: white;
 }
-.facebook-link:hover{
-    background: url(../img/logo/facebook-circle-line\ \(1\).png);
+.ri-facebook-circle-line:hover{
+    color: var(--hover-title);
 }
-.instagram-link{
-    background: url(../img/logo/instagram-line.png);
+.ri-instagram-line{
+    font-size: 20px;
+    color: white;
 }
-.instagram-link:hover{
-    background: url(../img/logo/instagram-line\ \(1\).png);
+.ri-instagram-line:hover{
+    color: var(--hover-title);
 }
-.youtube-link{
-    background: url(../img/logo/youtube-line.png);
+.ri-youtube-line{
+    font-size: 20px;
+    color: white;
 }
-.youtube-link:hover{
-    background: url(../img/logo/youtube-line\ \(1\).png);
+.ri-youtube-line:hover{
+    color: var(--hover-title);
 }
 
 /* Responsive */
 @media (min-width: 502px) {
     
-    .home-image{
-        max-width: 450px;
-        display: flex;
-        justify-content: center;
-    }
+    
     .crendel-image{
         width: 70px;
     }
     .links-container{
         margin-top: 50px;
-        column-gap: 150px;
-    }
-    .home-title{
-        font-size: 50px;
-        font-family: var(--title-font);
-        margin-bottom: 24px;
     }
     .button-orange{
         padding: 15px 18px;
         font-size: 15px;
+    }
+}
+
+@media (min-width: 440px) and (max-width: 501px){
+    
+    
+}
+
+@media (max-width: 420px){
+    
+    .crendel-image{
+        width: 40px;
+        top: 140px;
+        left: 80%;
+    }
+}
+
+@media (max-width: 363px){
+    
+    
+    .crendel-image{
+        width: 30px;
+        top: 60px;
+        left: 80%;
+    }
+    .button-orange{
+        padding: 10px 13px;
+        font-size: 10px;
+    }
+    .left-links-container{
+        font-size: 10px;
+    }
+    .map-logo{
+        width: 16px;
+        height: 16px;
+    }
+    .ri-facebook-circle-line,
+    .ri-instagram-line,
+    .ri-youtube-line{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 350px) {
+    .crendel-image{
+        width: 30px;
+        top: 100px;
+        left: 80%;
+    }
+}
+
+@media (max-width: 290px) {
+    
+    
+    .button-orange{
+        padding: 10px 13px;
+        font-size: 8px;
+    }
+    .crendel-image{
+        top: 80px;
+        left: 80%;
+    }
+
+    
+    .left-links-container{
+        font-size: 8px;
     }
 }
