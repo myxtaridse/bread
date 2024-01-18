@@ -13,13 +13,8 @@
     justify-content: space-between;
     position: relative;
 }
-.header-logo{
-    margin-left: 30px;
-}
-.logo-bakery{
-    font-family: var(--title-font);
-    font-size: var(--medium-size);
-    color: var(--title-color);
+.logo-header{
+    margin: 0 0 0 30px;
     cursor: pointer;
     transition: color .4s;
 }
@@ -59,6 +54,7 @@
     color: var(--color-text);
     font-weight: 600;
     transition: color .4s;
+    font-size: var(--normal-font-size);
 }
 .nav-link:hover{
     color: var(--title-color);
@@ -104,7 +100,27 @@
 }
 
 
-/* Responsive */
+@media screen and (max-width: 294px) {
+    
+    .nav-toggle-menu,
+    .nav-close-menu{
+        font-size: 18px;
+    }
+    .navbar-container{
+        height: 70px;
+    }
+}
+
+@media screen and (max-width: 260px) {
+    
+    .nav-toggle-menu,
+    .nav-close-menu{
+        font-size: 16px;
+    }
+}
+
+
+/* Responsive 
 @media (min-width: 502px) {
     .logo-bakery{
         font-size: 18px;
@@ -149,4 +165,4 @@
     .nav-link{
         font-size: 12px;
     }
-}
+}*/

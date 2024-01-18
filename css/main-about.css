@@ -13,7 +13,8 @@
 }
 .about-text{
     color: var(--second-color-text);
-    font-size: var(--smallest-size);
+    font-size: var(--small-font-size);
+    padding: 0 10px;
 }
 .about-button{
     margin-top: 30px;
@@ -25,43 +26,8 @@
     right: 0;
 }
 
-/* Responsive */
-@media (min-width: 502px) {
-    
+@media screen and (min-width: 300px) {
     .about-text{
-        font-size: 16px;
-    }
-    .about-button{
-        margin-top: 40px;
-    }
-    .chebyrek-image{
-        width: 70px;
-        bottom: 2px;
-        right: 10px;
-    }
-}
-
-@media (width <= 363px){
-    
-    .all-title{
-        font-size: 26px;
-    }
-    .about-text{
-        font-size: 10px;
-    }
-    .chebyrek-image{
-        width: 40px;
-        top: 120px;
-    }
-}
-
-@media (max-width: 290px) {
-    
-    .about-text{
-        font-size: 8px;
-    }
-    .chebyrek-image{
-        width: 40px;
-        top: 110px;
+        line-height: 14px;
     }
 }

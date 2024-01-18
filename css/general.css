@@ -11,15 +11,26 @@
     --hover-title: rgb(220, 114, 21);
     --container-bg: rgba(32, 30, 30, 0.618);
 
-    /*FONT-SIZE*/
-    /*--title-home: 46px;*/
+
+    --biggest-font-size: 3rem;
+    --bigger-font-size: 2rem;
+    --h1-font-size: 2.125rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .860rem;
+    --small-font-size: .674rem;
+
+    
+
+    /*FONT-SIZE
+    --title-home: 46px;
     --logo-size: 20px;
     --biggest-size: 48px;
     --title-size: 36px;
     --medium-size: 18px;
     --small-size: 18px;
     --smallest-size: 14px;
-    --body-size: 16px;
+    --body-size: 16px;*/
 
     /*FONT-FAMILY*/
     --title-font: 'Dancing Script', cursive;
@@ -38,7 +49,6 @@ html{
 body,
 button{
     font-family: var(--body-font);
-    font-size: var(--body-size);
 }
 body{
     background-color: rgb(15, 15, 15);
@@ -56,16 +66,33 @@ img {
     max-width: 100%;
     height: auto;
 }
-.container {
-    max-width: 1120px;
-    padding: 0 16px;
+h1{
+    font-size: var(--h1-font-size);
 }
-.all-title{
+h2{
+    font-size: var(--h2-font-size);
     font-family: var(--title-font);
-    font-size: var(--title-size);
     margin: 25px 0;
     text-align: center;
 }
+h3{
+    font-family: var(--title-font);
+    color: var(--title-color);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: var(--h3-font-size);
+}
+.container {
+    max-width: 1120px;
+    padding: 0 16px;
+    margin-bottom: 70px;
+}
+/*.all-title{
+    
+    font-size: var(--title-size);
+    
+}*/
 
 ::-webkit-scrollbar{
     width: .9rem;
@@ -103,8 +130,75 @@ img {
 .active-link{
     color: hsl(28, 88%, 62%);
 }
+/*
+@media screen and (min-width: )*/
 
-/*@media (min-width: 806px) and (max-width: 805px){
+@media screen and (max-width: 293px) {
+    :root {
+      --h1-font-size: 1.75rem;
+      --h2-font-size: 1.35rem;
+      --h3-font-size: 1rem;
+      --normal-font-size: .7rem;
+      --small-font-size: .575rem;
+    }
+    .container{
+        margin-bottom: 60px;
+    }
+    h2{
+        margin: 15px 0;
+    }
+}
+
+@media screen and (max-width: 260px) {
+    
+    :root {
+        --h1-font-size: 1.5rem;
+        --h2-font-size: 1.15rem;
+        --h3-font-size: 0.8rem;
+        --normal-font-size: .7rem;
+        --small-font-size: .495rem;
+    }
+    .container{
+        margin-bottom: 50px;
+    }
+    h2{
+        margin: 10px 0;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 1150px) {
+    :root {
+      --biggest-font-size: 5rem;
+      --bigger-font-size: 3rem;
+      --h1-font-size: 2.25rem;
+      --h2-font-size: 1.5rem;
+      --h3-font-size: 1.25rem;
+      --normal-font-size: .600rem;
+      --small-font-size: .400rem;
+    }
+  }
+
+/*
+@media screen and (max-width: 340px) {
+    .container{
+        margin-inline: 1rem;
+    }
+    .home-title{
+        font-size: 2.5rem;
+    }
+    .links-container{
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+}
+
+@media (min-width: 806px) and (max-width: 805px){
     :root{
         --title-home: 4.5em;
     }

@@ -41,13 +41,15 @@ const scrollUp = () => {
 }
 window.addEventListener('scroll', scrollUp);
 
+
 const sections = document.querySelectorAll('section[Id]');
 
 const scrollActive = () => {
     const scrollDown = window.scrollY;
 
-    sections.forEach(current =>{
-        const sectionsHeight = current.offsetHeight,
+    sections.forEach(current =>{  // current - вероятно взята как переменная - текущий
+        // метод offset позволяет получать позицию элемента относительно документа
+        const sectionsHeight = current.offsetHeight, // измеряет высоту элемента
               sectionTop = current.offsetTop - 58,
               sectionId = current.getAttribute('id'),
               sectionsClass = document.querySelector('.nav-container-show a[href*=' + sectionId + ']')
