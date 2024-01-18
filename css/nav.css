@@ -42,8 +42,8 @@
         top: 0;
         right: -100%;
         background: transparent;
-        backdrop-filter: blur(16px);
-        -webkit-backdrop-filter: blur(30px);
+        backdrop-filter: blur(30px);
+        --webkit-backdrop-filter: blur(30px);
         width: 70%;
         height: 100%;
         padding: 96px 48px 0;
@@ -146,5 +146,3 @@
         font-size: 12px;
     }
 }
-
-
