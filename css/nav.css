@@ -41,9 +41,9 @@
         position: fixed;
         top: 0;
         right: -100%;
-        background: transparent;
+        background-color: transparent;
         backdrop-filter: blur(30px);
-        --webkit-backdrop-filter: blur(30px);
+        -webkit-backdrop-filter: blur(30px);
         width: 70%;
         height: 100%;
         padding: 96px 48px 0;
