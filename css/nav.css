@@ -99,6 +99,10 @@
     z-index: -1;
 }
 
+.active-link{
+    color: hsl(28, 88%, 62%);
+}
+
 
 /* Responsive */
 @media (min-width: 502px) {
