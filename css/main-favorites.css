@@ -67,11 +67,11 @@
 @media screen and (max-width: 360px) {
     
     .product-price{
-        font-size: 13px;
+        font-size: 14px;
     }
     .product-add-to-cart{
-        padding: 4px 9px;
-        font-size: 12px;
+        padding: 5px 10px;
+        font-size: 13px;
     }
 }
 
@@ -111,11 +111,11 @@
         margin-top: -20px;
     }
     .product-price{
-        font-size: 10px;
+        font-size: 12px;
     }
     .product-add-to-cart{
-        padding: 2px 7px;
-        font-size: 12px;
+        padding: 3px 8px;
+        font-size: 13px;
     }
 }
 

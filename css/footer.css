@@ -1,8 +1,9 @@
 
 
 .footer-container{
-    padding-block: 48px 32px;
+    padding-block: 38px 32px;
     position: relative;
+    margin-bottom: 10px;
 }
 .left-footer{
     margin-bottom: 30px;
@@ -65,11 +66,28 @@
 }
 
 .footer-copy{
-    margin-top: 20px;
     margin-bottom: 10px;
     font-size: var(--small-font-size);
     text-align: center;
     color: var(--second-color-text);
+}
+
+@media screen and (min-width: 400px) {
+    .container-right-footer{
+        padding: 10px;
+        justify-content: center;
+    }
+    .right-footer{
+        grid-template-columns: repeat(3, 110px);
+        column-gap: 15px;
+    }
+}
+
+@media screen and (min-width: 334px) and (max-width: 399px) {
+    .right-footer{
+        grid-template-columns: repeat(2, 100px);
+        gap: 30px;
+    }
 }
 
 @media screen and (max-width: 294px) {
